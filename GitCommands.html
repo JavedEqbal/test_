@@ -1,45 +1,44 @@
+*** INITIALIZE A REPO ***
 
-<h>*** Initiaize a Repo ***</h></br>
-
-_Used to initialize a local folder to make it a git repo_</br>
+Used to initialize a local folder to make it a git repo
 
 cd <folderPath>
 git init
 
-<h>*** Clone & Status ***</h></br>
+*** CLONE & STATUS ***
 
-_Clone a repo_</br>
-git clone <github https link>
+Clone a repo
+git clone <-github https link->
 
-_Check status of code_</br>
+Check status of code
 git status
 
-<h>*** Add & Commit ***</h></br>
+*** ADD & COMMIT ***
 
-_Add a file or Stage a file_</br>
+Add a file or Stage a file
 
 git add .
-git add <filename>
+git add <-filename->
 
-_Commiit the changes or Save them on repo_</br>
+Commiit the changes or Save them on repo
 
 git commit -m "some message"
 
-<h>*** PUSH COMMAND ***</h></br>
+*** PUSH COMMAND ***
 
-_Upload local local repo content to remote._
+Upload local repo content to remote
 
 git push origin main
 
-*** Add/Copy remote repository to local ***
+*** ADD/COPY REMOTE REPO TO LOCAL ***
 
 git remote add origin "https://github.com/JavedEqbal/test_.git"
 
-***Verify remote repos***
+***VERIFY REMOTE REPOSITORY***
 
 "git remote -v"
 
-BRANCHING TECHNIQUES
+-------------- BRANCHING TECHNIQUES -------------- 
 
 *** Check which Branch we are on ***
 git branch
@@ -74,10 +73,10 @@ git pull origin master
 
 *** RESOLVING MERGE CONFLICTS
 
-_An event that takes place when Git is unable to automatically resolve differences in code b/w 2 commits._
+An event that takes place when Git is unable to automatically resolve differences in code b/w 2 commits.
 
 OPTION #1
-PR
+PR (Pull Request)
 
 OPTION #2
 git merge <-branch name->
