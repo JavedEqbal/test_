@@ -38,13 +38,19 @@ git remote add origin "https://github.com/JavedEqbal/test_.git"
 
 "git remote -v"
 
+*** SET UPSTREAM ***
+Adding Upstream helps just running git push to understand you want to upload code on 1 branch so you don't have to use complete command "git push origin feature1"
+
+git push -u origin feature1
+git push
+
 -------------- BRANCHING TECHNIQUES -------------- 
 
 *** Check which Branch we are on ***
 git branch
 
 *** To Rename Branch ***
-git branch -M main
+git branch -M newname
 
 *** Create new branch ***
 git checkout -b feature1
