@@ -25,25 +25,59 @@ _Commiit the changes or Save them on repo_</br>
 
 git commit -m "some message"
 
-<h>*** Push Command ***</filename>/h></br>
+<h>*** PUSH COMMAND ***</h></br>
 
-_Upload local local repo content to remote_
+_Upload local local repo content to remote._
 
 git push origin main
 
-<h>BRANCHING TECHNIQUES</h></br>
+*** Add/Copy remote repository to local ***
 
-<h>*** Check which Branch we are on ***</h></br>
+git remote add origin "https://github.com/JavedEqbal/test_.git"
+
+***Verify remote repos***
+
+"git remote -v"
+
+BRANCHING TECHNIQUES
+
+*** Check which Branch we are on ***
 git branch
 
-<h>*** To Rename Branch ***</h></br>
+*** To Rename Branch ***
 git branch -M main
 
-<h>*** Create new branch ***</h></br>
+*** Create new branch ***
 git checkout -b feature1
 
-<h>*** Switch between branches ***</h></br>
+*** Switch between branches ***
 git checkout main
 
-<h>*** To Delete a branch ***</h></br>
+*** To Delete a branch ***
 git branch -a feature1
+
+*** MERGING CODE *** 
+
+OPTION #1
+
+*** Check difference ***
+git diff <-branch name->
+git merge <-branch name->
+
+OPTION #2
+
+*** Create a PR (Pull Request) ***
+
+*** PULL COMMAND ***
+
+git pull origin master
+
+*** RESOLVING MERGE CONFLICTS
+
+_An event that takes place when Git is unable to automatically resolve differences in code b/w 2 commits._
+
+OPTION #1
+PR
+
+OPTION #2
+git merge <-branch name->
