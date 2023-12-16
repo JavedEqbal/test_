@@ -1,3 +1,5 @@
+-------------- BASIC OPERATIONS --------------
+
 *** INITIALIZE A REPO ***
 
 Used to initialize a local folder to make it a git repo
@@ -34,11 +36,11 @@ git push origin main
 
 git remote add origin "https://github.com/JavedEqbal/test_.git"
 
-***VERIFY REMOTE REPOSITORY***
+-------------- VERIFY REMOTE REPOSITORY -------------- 
 
 "git remote -v"
 
-*** SET UPSTREAM ***
+-------------- SET UPSTREAM -------------- 
 Adding Upstream helps just running git push to understand you want to upload code on 1 branch so you don't have to use complete command "git push origin feature1"
 
 git push -u origin feature1
@@ -61,7 +63,7 @@ git checkout main
 *** To Delete a branch ***
 git branch -a feature1
 
-*** MERGING CODE *** 
+-------------- MERGING CODE -------------- 
 
 OPTION #1
 
@@ -77,7 +79,7 @@ OPTION #2
 
 git pull origin master
 
-*** RESOLVING MERGE CONFLICTS
+-------------- RESOLVING MERGE CONFLICTS --------------
 
 An event that takes place when Git is unable to automatically resolve differences in code b/w 2 commits.
 
@@ -86,3 +88,19 @@ PR (Pull Request)
 
 OPTION #2
 git merge <-branch name->
+
+-------------- UN-DOING CHANGES --------------
+
+CASE #1 : STAGED CHANGES
+
+git reset <-file name->
+git reset
+
+CASE #2 : COMMITED CCHANGES (for 1 commits)
+
+git reset HEAD~1
+
+CASE #3 : COMMITED CCHANGES (for many commits)
+
+git reset <-commit hash->
+git reset --hard <-comit hash->
